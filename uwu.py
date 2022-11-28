@@ -7,6 +7,7 @@ import seaborn as sns
 import warnings
 warnings.filterwarnings('ignore')
 from sklearn.preprocessing import LabelEncoder
+import pickle
 
 
 df=pd.read_csv("data.csv")
@@ -44,3 +45,6 @@ X_train,X_test,y_train,y_test=train_test_split(X,y,train_size=0.8,random_state=1
 model=RandomForestClassifier(n_estimators=100,random_state=1)
 model.fit(X_train,y_train)
 # y_pred=model.predict(X_test)
+# model_exp=pickle.dumps(model)
+with open("model.pkl", "wb") as f:
+    pickle.dump(model, f)
