@@ -27,6 +27,11 @@ to see the website in action
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@AryaNair](https://github.com/Arya-A-Nair/)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
