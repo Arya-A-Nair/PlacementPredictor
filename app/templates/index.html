@@ -18,8 +18,17 @@
 		/>
 	</head>
 	<body>
-		<!-- <form method="post" action="http://127.0.0.1:5000/submit" class="p-2"> -->
-		<form action="{{url_for('userInput')}}" method="POST" class="p-4">
+		<form
+			action="{{url_for('userInput')}}"
+			method="POST"
+			class="card m-5 w-50 p-4"
+			style="
+				position: absolute;
+				top: 50vh;
+				left: 50vw;
+				transform: translate(-50%, -50%);
+			"
+		>
 			<div class="input-group mb-3">
 				<label class="input-group-text" for="inputGroupSelect01"
 					>Enter your gender</label
@@ -30,9 +39,9 @@
 				</select>
 			</div>
 			<div class="input-group mb-3">
-				<span class="input-group-text">Marks in Percentage</span>
+				<span class="input-group-text">10th Marks in Percentage</span>
 				<input
-					type="text"
+					type="number"
 					class="form-control"
 					aria-label="10th marks"
 					name="10thMarks"
@@ -50,7 +59,7 @@
 			<div class="input-group mb-3">
 				<span class="input-group-text">12th Marks in Percentage</span>
 				<input
-					type="text"
+					type="number"
 					class="form-control"
 					aria-label="10thmarks"
 					name="12thMarks"
@@ -78,7 +87,7 @@
 			<div class="input-group mb-3">
 				<span class="input-group-text">Degree Marks in Percentage</span>
 				<input
-					type="text"
+					type="number"
 					class="form-control"
 					aria-label="10thmarks"
 					name="degreeMarks"
