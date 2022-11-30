@@ -18,7 +18,8 @@
 		/>
 	</head>
 	<body>
-		<form method="post" action="http://127.0.0.1:5000/submit" class="p-2">
+		<!-- <form method="post" action="http://127.0.0.1:5000/submit" class="p-2"> -->
+		<form action="{{url_for('userInput')}}" method="POST" class="p-4">
 			<div class="input-group mb-3">
 				<label class="input-group-text" for="inputGroupSelect01"
 					>Enter your gender</label
@@ -65,6 +66,16 @@
 				</select>
 			</div>
 			<div class="input-group mb-3">
+				<label class="input-group-text" for="inputGroupSelect01"
+					>12th Subject
+				</label>
+				<select class="form-select" id="inputGroupSelect01" name="12thSubject">
+					<option value="Arts">Arts</option>
+					<option value="Commerce">Commerce</option>
+					<option value="Science">Science</option>
+				</select>
+			</div>
+			<div class="input-group mb-3">
 				<span class="input-group-text">Degree Marks in Percentage</span>
 				<input
 					type="text"
@@ -89,8 +100,8 @@
 					>Work Experience
 				</label>
 				<select class="form-select" id="inputGroupSelect01" name="workExp">
-					<option value="Yes">Yes</option>
-					<option value="No">No</option>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
 				</select>
 			</div>
 			<div class="input-group mb-3">
@@ -102,8 +113,8 @@
 					id="inputGroupSelect01"
 					name="specialisation"
 				>
-					<option value="Mkt&HR">Marketing and HR</option>
-					<option value="Mkt&Fin">Marketing and Finance</option>
+					<option value="1">Marketing and HR</option>
+					<option value="0">Marketing and Finance</option>
 				</select>
 			</div>
 			<button type="submit" class="btn btn-secondary w-100">Submit</button>
