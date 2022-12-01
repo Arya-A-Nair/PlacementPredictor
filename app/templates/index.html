@@ -17,11 +17,11 @@
 			crossorigin="anonymous"
 		/>
 	</head>
-	<body class="bg-info">
+	<body class="bg-info ">
 		<form
 			action="{{url_for('userInput')}}"
 			method="POST"
-			class="card  w-50 p-4"
+			class="card w-50 p-4"
 			style="
 				position: absolute;
 				top: 50vh;
@@ -33,7 +33,7 @@
 				<label class="input-group-text" for="inputGroupSelect01"
 					>Enter your gender</label
 				>
-				<select class="form-select" id="inputGroupSelect01" name="gender" >
+				<select class="form-select" id="inputGroupSelect01" name="gender">
 					<option value="1">Male</option>
 					<option value="0">Female</option>
 				</select>
@@ -45,6 +45,8 @@
 					class="form-control"
 					aria-label="10th marks"
 					name="10thMarks"
+					min="0"
+					max="100"
 					required
 				/>
 			</div>
@@ -131,5 +133,10 @@
 			</div>
 			<button type="submit" class="btn btn-info w-100">Submit</button>
 		</form>
+		<div class="bottom-0 position-absolute w-100 bg-dark text-white text-center py-2">
+			Made with
+			<span style="font-size: 150%;" class="text-info">♥</span>
+			by Arya Nair
+		</div>
 	</body>
 </html>
