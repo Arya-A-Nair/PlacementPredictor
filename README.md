@@ -27,11 +27,6 @@ to see the website in action
 <img src="/screenshots/placed.png">
 <img src="/screenshots/notplaced.png">
 
-# Wakatime 
-<img
-  src="https://github.com/Arya-A-Nair/Arya-A-Nair/blob/main/images/stat.svg"
-  alt="Avinal WakaTime Activity"
-/>
 
 ## Contributing
 
